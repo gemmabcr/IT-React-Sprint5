@@ -7,7 +7,7 @@ async function getDatos() {
     headers: { 'Accept': 'application/json'
     }})
     .then(response => response.json())
-    .then(json => { HTMLResponse.innerText = json.joke; })
+    .then(json => { HTMLResponse.innerText = `"${json.joke}"`; })
 }
 
 
