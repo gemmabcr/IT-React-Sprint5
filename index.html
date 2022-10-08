@@ -4,15 +4,24 @@
   <meta charset="UTF-8">
   <title>Diary laugh</title>
   <link rel="stylesheet" href="index.css" />
-  <script src="index.js"></script>
 </head>
 <body>
   <main>
     <h1>Prepara't per riure? 🤣​</h1>
-    <div class="jokeContainer">
+    <div class="joke-container">
       <p id="jokeText"></p>
+      <div class="score-review-container" id="scoreReviewContainer">
+        <p class="score-review-paragraph">T'ha agradat l'acudit?</p>
+        <div style="display: flex; gap: 1rem; margin: 0.5rem 0">
+          <button class="score-review-button" id="badReview" onclick="getScoreReview()" value="1">No</button>
+          <button class="score-review-button" id="neutralReview" onclick="getScoreReview()" value="2">Ni sí ni no</button>
+          <button class="score-review-button" id="goodReview" onclick="getScoreReview()" value="3">Sí</button>
+        </div>
+      </div>
     </div>
     <button class="button-1" role="button" onclick="getDatos()">Següent acudit</button>
+    <script src="Review.js"></script>
+    <script src="index.js"></script>
   </main>
 </body>
 </html>
